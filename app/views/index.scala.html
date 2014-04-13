@@ -1,0 +1,14 @@
+@(mdFileName: String)
+
+@main(helpers.md.MdViewHelper.titleByFilePath("resources/" + mdFileName + ".md")) {
+
+    <div id="main">
+        <article>
+
+        @helpers.md.MdViewHelper.bespokeMdFileRender("resources/" + mdFileName + ".md")
+
+        </article>
+    </div>
+
+
+}
