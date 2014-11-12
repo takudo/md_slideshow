@@ -1,4 +1,4 @@
-@(title: String)(content: Html)
+@(mdFile: models.md.MdFile)(content: Html)
 
 <!DOCTYPE html>
 
@@ -7,7 +7,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <title>@title</title>
+        <title>@helpers.md.MdViewHelper.titleByMdFile(mdFile)</title>
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/simple-styles.css")">
         <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/themes.css")">
@@ -16,17 +16,21 @@
         <link href="http://fonts.googleapis.com/css?family=Raleway+Dots" rel="stylesheet" type="text/css">
 
     </head>
-    <body >
+    <body class="@models.bespokejs.BespokejsConf.theme">
         @content
 
-        <script src="@routes.Assets.at("javascripts/bespoke.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.at("javascripts/bespoke-keys.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.at("javascripts/bespoke-scale.min.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.at("javascripts/bespoke-bullets.min.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.at("javascripts/bespoke-progress.min.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.at("javascripts/bespoke-hash.min.js")" type="text/javascript"></script>
-    <script src="@routes.Assets.at("javascripts/bespoke-state.min.js")" type="text/javascript"></script>
-    <script src="@routes.Assets.at("javascripts/prism.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/components/bespoke.js/dist/bespoke.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/components/bespoke-keys/dist/bespoke-keys.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/components/bespoke-scale/dist/bespoke-scale.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/components/bespoke-bullets/dist/bespoke-bullets.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/components/bespoke-progress/dist/bespoke-progress.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/components/bespoke-hash/dist/bespoke-hash.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/components/bespoke-state/dist/bespoke-state.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/components/bespoke-touch/dist/bespoke-touch.min.js")" type="text/javascript"></script>
+
+        <script src="@routes.Assets.at("javascripts/components/bespoke-theme-cube/dist/bespoke-theme-cube.min.js")" type="text/javascript"></script>
+
+        <script src="@routes.Assets.at("javascripts/prism.js")" type="text/javascript"></script>
         <script src="@routes.Assets.at("javascripts/main.js")" type="text/javascript"></script>
 
     </body>

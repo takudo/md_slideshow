@@ -1,11 +1,11 @@
-@(mdFileName: String)
+@(mdFile: models.md.MdFile)
 
-@main(helpers.md.MdViewHelper.titleByFilePath("resources/" + mdFileName + ".md")) {
+@main(mdFile) {
 
     <div id="main">
         <article>
 
-        @helpers.md.MdViewHelper.bespokeMdFileRender("resources/" + mdFileName + ".md")
+        @helpers.md.MdViewHelper.bespokeMdFileRender(mdFile)
 
         </article>
     </div>

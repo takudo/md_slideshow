@@ -16,3 +16,4 @@ dist
 /.settings
 resources/*.md
 !resources/sample.md
+public/javascripts/components

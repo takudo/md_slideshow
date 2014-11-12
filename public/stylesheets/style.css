@@ -174,7 +174,7 @@ header p.visible {
 	opacity: 1;
 }
 
-@media 
+@media
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
 	h1 {

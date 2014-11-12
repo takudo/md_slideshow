@@ -1,0 +1,25 @@
+{
+  "name": "md_slideshow",
+  "version": "0.0.1",
+  "homepage": "https://github.com/takudo/md_slideshow",
+  "main": "public/javascripts/main.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bespoke.js": "~1.0.0",
+    "bespoke-keys": "~1.0.0",
+    "bespoke-touch": "~1.0.0",
+    "bespoke-bullets": "~1.1.0",
+    "bespoke-scale": "~1.0.1",
+    "bespoke-progress": "~1.0.0",
+    "bespoke-hash": "~1.0.0",
+    "bespoke-state": "~1.0.0",
+    "bespoke-theme-cube": "~2.0.0"
+  }
+}
